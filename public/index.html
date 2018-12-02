@@ -2,13 +2,15 @@
 <html>
 
 <head>
-    <title>Page Title</title>
-    <script src="/socket.io.js"></script>
-    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <title>Game Room</title>
+    <script src="socket.io.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-1.11.1.js"></script>-->
+    <script src="fabric.js"></script>
     <link href="styles.css" rel="stylesheet"/>
     </head>
 
 <body>
+    <!--
     <div id="mario-chat">
         <div id="chat-window">
             <div id="output"></div>
@@ -19,6 +21,12 @@
         <button id="send">Send</button>
     </div>
     <script src="chat.js"></script>
+    -->
+    <p>Room Name: <span id="room-name">N/A</span></p>
+    <div id="canvas-holder">
+        <canvas id="room-canvas" width="500" height="500"/>
+    </div>
+    <script src="room.js"></script>
 </body>
 
 </html>
