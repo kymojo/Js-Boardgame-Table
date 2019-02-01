@@ -19,6 +19,8 @@ const canvas = new fabric.Canvas('room-canvas');
 
 // Initialize page
 dom_RoomName.innerHTML = room_name;
+canvas.stopContextMenu = true;
+canvas.fireRightClick = true;
 
 var rect = new fabric.Rect({
     left: 20,

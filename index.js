@@ -17,14 +17,4 @@ const io = socket(server);
 
 io.on('connection', (socket) => {
     console.log(`Socket connection [id: ${socket.id}]`);
-    
-    /*
-    socket.on('chat', (data) => {
-        io.sockets.emit('chat',data); // Send data to all sockets
-    });
-
-    socket.on('typing', (data) => {
-        socket.broadcast.emit('typing',data); // Send data to all OTHER sockets
-    });
-    */
 });
